@@ -1,0 +1,15 @@
+title:  Fundamental Maths Skills
+description: This site contains an introduction to mathematics that may be used in everyday life and may also be used as part of a GCSE mathematics curriculum.
+copyright_start_year_end: 2020
+copyright_owner: Tim Brockley.
+copyright_terms: All Rights Reserved.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:path
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
