@@ -2,6 +2,7 @@
 layout: post
 title:  "Prime Factors"
 author: Tim Brockley
+tags: [Prime Factors, Prime Numbers, Index Form]
 ---
 ## What are Prime Factors ?
 Prime factors are factors of a number that are, themselves, prime numbers.

@@ -24,22 +24,38 @@ layout: default
     <!-- only output if posts exist -->
     {%- if site.posts.size > 0 -%}
 
-      <div id="posts">
-        {%- for post in site.posts -%}
-          <div id="post" onclick="goto_url('{{post.url}}');" >
-            {%- if post.image -%}
-              {%- assign image = post.image -%}
-            {%- else -%}
-              {%- assign image = '/assets/images/jekyll_logo_200_150.png' -%}
-            {%- endif -%}
-            <p class="image"><a href="{{post.url}}"><img src="{{image}}"></a></p>
-            <p class="title"><a href="{{post.url}}">{{post.title | truncate: 30}}</a></p>
-            <p class="description">{{post.description}}</p>
-            <p class="date">{{post.date | date: '%d %b %Y'}}</p>
-            <p class="button"><a href="{{post.url}}"><button>Read More</button></a></p>
-          </div>
-        {%- endfor -%}
-      </div>
+    <h1 style="text-align: center;">Latest Posts</h1>
+
+    <table class="posts">
+      <colgroup>
+         <col span="1" style="width: 20%;">
+         <col span="1" style="width: 80%;">
+      </colgroup>
+      {%- for post in site.posts -%}
+          {%- if post.image -%}
+            {%- assign image = post.image -%}
+          {%- else -%}
+            {%- assign image = '/assets/images/jekyll_logo_200_150.png' -%}
+          {%- endif -%}
+          <tr>
+            <td class="tile_image">
+              <p class="image"><a href="{{post.url}}"><img src="{{image}}"></a></p>
+            </td>
+            <td class="tile_text">
+              <p class="title"><a href="{{post.url}}">{{post.title | truncate: 30}}</a></p>
+              <p class="description">{{post.description}}</p>
+              <p class="post_info"><span style="color:#555">Date: </span>{{post.date | date: '%d %b %Y'}}
+                {%- if post.tags.size >0 -%}
+                  &nbsp;
+                  &nbsp;
+                  <span style="color:#555">Tags: </span>
+                  {{post.tags|join: '&nbsp;&nbsp;'}}
+                {%- endif -%}
+              </p>
+            </td>
+          </tr>
+      {%- endfor -%}
+    </table>
 
     {%- endif -%}
     <!-- only output if posts exist -->
