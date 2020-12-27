@@ -6,10 +6,10 @@
 body
 {
     grid-template-rows: 34px auto 30px;
-    grid-template-columns: auto 240px;
+    grid-template-columns:  240px auto;
     grid-template-areas:
         "header header"
-        "main sidebar"
+        "sidebar main"
         "footer footer";
     display: grid;
     background-color: white;
