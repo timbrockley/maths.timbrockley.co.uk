@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Index Form"
-description: 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test
-author: Tim Brockley
 tags: [Index Form]
 ---
 ## What is Index Form ?

@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Multiples"
-description: 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test 123 test
-author: Tim Brockley
 tag: [Multiples]
 ---
 ## What is a Multiple ?

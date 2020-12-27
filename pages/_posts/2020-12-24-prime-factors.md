@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Prime Factors"
-author: Tim Brockley
 tags: [Prime Factors, Prime Numbers, Index Form]
 ---
 ## What are Prime Factors ?

@@ -79,30 +79,23 @@ body
 {
     margin: 0px;
     padding: 8px;
+    color: black;
 }
 
 .posts tr { border: 1px solid #DDD; border-radius: 1rem; }
-.posts td { border: none; background-color: #FFF; }
+.posts td { border: none; }
 
-.tile_image { display: block;  margin: 4px; margin-left: auto; margin-right: auto; }
+.tile_image { display: block;  margin-left: auto; margin-right: auto; }
 .tile_text { text-align: left; }
 
 .posts img { border-radius: 1rem; }
 
-.post p
-{
-    margin: 0;
-    padding: 8px 0px;
-    text-align: left;
-    overflow: hidden;
-}
-
-.title { height: 10%; font-size: larger; font-weight: bold; }
+.title { height: 24px; font-size: larger; font-weight: bold; overflow: hidden; }
 .title a { color: black; text-decoration: none; }
 .title a:visited { color: black; text-decoration: none; }
 .title a:hover { color: #4963AF; text-decoration: none; }
-.description { height: 24%; text-align: left; width: 90%; color: #000; }
-.post_info { height: 8%; font-size: small; color: #222; }
+.description { height: 100px; overflow: hidden; }
+.post_info { height: 20px; font-size: small; color: #222; overflow: hidden; }
 
 #infobar_header
 {
@@ -113,7 +106,7 @@ body
     padding-left: 2px;
     padding-bottom: 10px;
 }
-#infobar_header > h1 { display: inline; margin: 0px; padding-top: 0px; }
+#infobar_header h1 { display: inline; margin: 0px; padding-top: 0px; }
 #infobar_header_text { font-size: small;}
 
 #content
